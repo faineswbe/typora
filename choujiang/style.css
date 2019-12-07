@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+.row .col-1-of-3 {
+  float: left;
+  width: 150px; }
+
+.back {
+  position: relative;
+  width: 500px;
+  height: 100vh;
+  background-color: #e6e6e6; }
+  .back .center {
+    text-align: center;
+    width: 120px;
+    margin: 10px;
+    height: 30px; }
+    .back .center .center-button {
+      display: inline-block;
+      height: 30px;
+      margin: 25px 0;
+      line-height: 30px;
+      background-color: seagreen; }
+  .back .choujiang__checkbox, .back .kapai__checkbox {
+    display: none; }
+  .back .choujiang__checkbox:checked ~ .kapai > .front {
+    transform: rotateY(-180deg); }
+  .back .choujiang__checkbox:checked ~ .kapai > .back {
+    transform: rotateY(0); }
+  .back .choujiang__checkbox:checked ~ .kapai1 {
+    animation: kapai1 2s cubic-bezier(0.1, 0.9, 1, 1);
+    animation-delay: 1s; }
+  .back .choujiang__checkbox:checked ~ .kapai2 {
+    animation: kapai2 1.9s cubic-bezier(0.1, 0.9, 1, 1);
+    animation-delay: 1.1s; }
+  .back .choujiang__checkbox:checked ~ .kapai3 {
+    animation: kapai3 1.8s cubic-bezier(0.1, 0.9, 1, 1);
+    animation-delay: 1.2s; }
+  .back .choujiang__checkbox:checked ~ .kapai4 {
+    animation: kapai4 1.7s cubic-bezier(0.1, 0.9, 1, 1);
+    animation-delay: 1.3s; }
+  .back .choujiang__checkbox:checked ~ .kapai5 {
+    animation: kapai5 1.6s cubic-bezier(0.1, 0.9, 1, 1);
+    animation-delay: 1.4s; }
+  .back .choujiang__checkbox:checked ~ .kapai6 {
+    animation: kapai6 1.5s cubic-bezier(0.1, 0.9, 1, 1);
+    animation-delay: 1.5s; }
+  .back .choujiang__checkbox:checked ~ .kapai7 {
+    animation: kapai7 1.4s cubic-bezier(0.1, 0.9, 1, 1);
+    animation-delay: 1.6s; }
+  .back .choujiang__checkbox:checked ~ .kapai8 {
+    animation: kapai8 1.3s cubic-bezier(0.1, 0.9, 1, 1);
+    animation-delay: 1.7s; }
+
+@keyframes kapai1 {
+  0% {
+    left: 0;
+    top: 0; }
+  45% {
+    left: 140px;
+    top: 170px; }
+  55% {
+    left: 140px;
+    top: 170px; }
+  100% {
+    left: 0;
+    left: 0; } }
+
+@keyframes kapai2 {
+  0% {
+    left: 140px;
+    top: 0; }
+  45% {
+    left: 140px;
+    top: 170px; }
+  55% {
+    left: 140px;
+    top: 170px; }
+  100% {
+    left: 140px;
+    top: 0; } }
+
+@keyframes kapai3 {
+  0% {
+    left: 280px;
+    top: 0; }
+  45% {
+    left: 140px;
+    top: 170px; }
+  55% {
+    left: 140px;
+    top: 170px; }
+  100% {
+    left: 280px;
+    top: 0; } }
+
+@keyframes kapai4 {
+  0% {
+    left: 0;
+    top: 170px; }
+  45% {
+    left: 140px;
+    top: 170px; }
+  55% {
+    left: 140px;
+    top: 170px; }
+  100% {
+    left: 0;
+    top: 170px; } }
+
+@keyframes kapai5 {
+  0% {
+    left: 280px;
+    top: 170px; }
+  45% {
+    left: 140px;
+    top: 170px; }
+  55% {
+    left: 140px;
+    top: 170px; }
+  100% {
+    left: 280px;
+    top: 170px; } }
+
+@keyframes kapai6 {
+  0% {
+    left: 0;
+    top: 340px; }
+  45% {
+    left: 140px;
+    top: 170px; }
+  55% {
+    left: 140px;
+    top: 170px; }
+  100% {
+    left: 0;
+    top: 340px; } }
+
+@keyframes kapai7 {
+  0% {
+    left: 140px;
+    top: 340px; }
+  45% {
+    left: 140px;
+    top: 170px; }
+  55% {
+    left: 140px;
+    top: 170px; }
+  100% {
+    left: 140px;
+    top: 340px; } }
+
+@keyframes kapai8 {
+  0% {
+    left: 280px;
+    top: 340px; }
+  45% {
+    left: 140px;
+    top: 170px; }
+  55% {
+    left: 140px;
+    top: 170px; }
+  100% {
+    left: 280px;
+    top: 340px; } }
+  .back .kapai {
+    text-align: center;
+    line-height: 150px;
+    width: 120px;
+    height: 150px;
+    margin: 10px;
+    position: absolute; }
+    .back .kapai .paipai {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transition: transform 1s ease;
+      overflow: hidden; }
+    .back .kapai .back {
+      box-sizing: border-box;
+      border: 2px solid #969696;
+      z-index: 0;
+      background-color: red;
+      transform: rotateY(180deg); }
+    .back .kapai .front {
+      box-sizing: border-box;
+      border: 2px solid #969696;
+      z-index: 1;
+      background-color: sandybrown; }
+  .back .center {
+    position: absolute;
+    left: 140px;
+    top: 510px;
+    z-index: 0; }
+  .back .kapai1 {
+    left: 0;
+    top: 0; }
+  .back .kapai2 {
+    left: 140px;
+    top: 0; }
+  .back .kapai3 {
+    left: 280px;
+    top: 0; }
+  .back .kapai4 {
+    left: 0;
+    top: 170px; }
+  .back .kapai5 {
+    left: 280px;
+    top: 170px; }
+  .back .kapai6 {
+    left: 0;
+    top: 340px; }
+  .back .kapai7 {
+    left: 140px;
+    top: 340px; }
+  .back .kapai8 {
+    left: 280px;
+    top: 340px; }
+  .back .kapai9 {
+    left: 140px;
+    top: 170px; }
+
+.checked-item-front {
+  transform: rotateY(0) !important; }
+
+.checked-item-back {
+  transform: rotateY(180deg) !important; }
